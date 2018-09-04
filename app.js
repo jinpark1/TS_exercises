@@ -102,3 +102,33 @@ var great = function () {
 great();
 var greetFriend = function (friend) { return console.log(friend); };
 greetFriend("Hal");
+// Default Parameters
+var countdown = function (start) {
+    if (start === void 0) { start = 10; }
+    console.log(start);
+    while (start > 0) {
+        start--;
+    }
+    console.log("Done!", start);
+};
+countdown(20);
+// Rest & Spread
+var numbers = [1, 2, 5, 11, 23, 42];
+console.log(Math.max.apply(Math, numbers));
+console.log.apply(console, numbers);
+function makeArray() {
+    var args = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        args[_i] = arguments[_i];
+    }
+    return args;
+}
+console.log(makeArray(1, 2));
+// Destructing Array
+var myHobbies = ["Cooking", "Sports"];
+var hobby1 = myHobbies[0], hobby2 = myHobbies[1];
+console.log(hobby1, hobby2);
+// Destructring Objects
+var user = { userName: "Jin", age: 27 };
+var realName = user.userName, age = user.age;
+console.log(realName, age);

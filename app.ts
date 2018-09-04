@@ -129,3 +129,34 @@ great();
 
 const greetFriend = friend => console.log(friend);
 greetFriend("Hal");
+
+// Default Parameters
+const countdown = (start: number = 10): void => {
+    console.log(start)
+    while (start > 0) {
+        start--;
+    }
+    console.log("Done!", start)
+};
+countdown(20);
+
+
+// Rest & Spread
+const numbers = [1, 2, 5, 11, 23, 42];
+console.log(Math.max(...numbers));
+console.log(...numbers);
+
+function makeArray(...args: number[]) {
+    return args;
+}
+console.log(makeArray(1, 2))
+
+// Destructing Array
+const myHobbies = ["Cooking", "Sports"];
+const [hobby1, hobby2] = myHobbies;
+console.log(hobby1, hobby2);
+
+// Destructring Objects
+const user = {userName: "Jin", age: 27};
+const {userName: realName, age} = user;
+console.log(realName, age);
