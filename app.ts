@@ -142,7 +142,7 @@ countdown(20);
 
 
 // Rest & Spread
-const numbers = [1, 2, 5, 11, 23, 42];
+var numbers = [1, 2, 5, 11, 23, 42];
 console.log(Math.max(...numbers));
 console.log(...numbers);
 
