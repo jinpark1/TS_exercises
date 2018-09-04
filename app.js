@@ -132,3 +132,7 @@ console.log(hobby1, hobby2);
 var user = { userName: "Jin", age: 27 };
 var realName = user.userName, age = user.age;
 console.log(realName, age);
+// Template Literals
+var nameOne = "Jin";
+var greeting = "Hello there, I'm " + nameOne;
+console.log(greeting);

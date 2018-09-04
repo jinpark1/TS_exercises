@@ -160,3 +160,8 @@ console.log(hobby1, hobby2);
 const user = {userName: "Jin", age: 27};
 const {userName: realName, age} = user;
 console.log(realName, age);
+
+// Template Literals
+const nameOne = "Jin";
+const greeting = `Hello there, I'm ${nameOne}`;
+console.log(greeting);
